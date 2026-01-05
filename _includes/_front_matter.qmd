@@ -1,0 +1,23 @@
+---
+title: |
+    <p>![](style/mgmss_symbol_color.png){width=40px}</p>
+    Einführung in HTML
+subtitle: 'Die Sprache der Web Inhalte<br><small>Aufgaben</small>'
+date: 2026-01-05 
+date-modified: 2026-01-05
+author: Călin Aurel Drăgan
+abstract: 'Moderne Webseiten beinhalten eine Menge verschiedener Elemente. Jedes dieser Elemente und die Art und Weise wie diese zusammenhängen wird durch HTML beschrieben. Dadurch ist HTML die erste Technologie, die Du zur Erstellung von Webseiten lernst. Dieses Dokument fordert Dich durch ein Paar Aufgaben auf, Dein Wissen über HTML zu festigen. Denn das willst Du unbedingt; ich weiss.'
+# bibliography: references.bib
+format: 
+    csdoc-html:
+        include-in-header: _includes/_in_header.html
+        # include-after-body: _includes/_after_body.html
+        embed-resources: false
+        self-contained-math: false
+has-fontawesome: false
+has-math: true
+has-rating: true
+show-rating: false
+filters:
+  - highlight-text
+---

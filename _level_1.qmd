@@ -1,0 +1,136 @@
+## Stufe I
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Was ist HTML?",
+    level = 1,
+    base_points = 12,
+    max_base_points = 12 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Schlüssel die englische Abkürzung **HTML** auf und beschreibe in höchstens drei Sätzen, um was es sich dabei handelt. Erkläre darüber hinaus die zwei in ihr vorkommenden Begriffe, die jeweils mit **H** und mit **M** anfangen.   
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Die Abkürzung HTML steht für Hypertext Markup Language\*. Eine Markup Sprache ist eine deklarativ semantische Programmiersprache\*. Semantisch, weil die einzelnen Teile der Sprache nach ihrer Bedeutung genannt werden\*. Deklarativ, weil HTML nur das Auftauchen der Elemente beschreibt\*. Hypertext ist ein Text\*, das durch Querverweise\* mit anderen Texten verbunden ist\*.]{fg="yellow-shade-5"}
+:::
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Helfersprachen",
+    level = 1,
+    base_points = 4,
+    max_base_points = 4 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Die Sprache HTML wird durch zwei weitere Helfersprachen ergänzt. Nenne diese und beschreibe ihre Funktion.   
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Die Helfersprachen von HTML sind: **CSS**\* und **Javascript**\*. CSS verleiht den HTML ein Aussehen\* und Javascript sorgt für komplexere Logik\* wie Berechnungen und Entscheidungen, die getroffen werden sollen.]{fg="yellow-shade-5"}
+:::
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Tags",
+    level = 1,
+    base_points = 4,
+    max_base_points = 4 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Zeige die allgemeine Struktur eines Einfach- und eines Paartags. Erkläre den Unterschied zwischen Einfach- und Paartag.   
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Ein Einfachtag ist `<tag/>`\* und ein Paartag ist `<tag> ... </tag>`\*. Ein Paartag enthält keinen Inhalt\* wogegen ein Paartag einen Inhalt besitz, der zwischen eine Anfags- und einem Endtag eingefügt wird\*.]{fg="yellow-shade-5"}
+:::
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Attribute",
+    level = 1,
+    base_points = 7,
+    max_base_points = 7 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Zeige die allgemeine Struktur eines Paartags, welches die zwei Attribute `id` und `class` besitzt. Gebe den Werten der Attribute einen sinnvollen Namen, der aus mindestens zwei Wörtern besteht.  Erkläre welche Rolle diese zwei wichtigen Attribute für ein HTML Element spielen.   
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Ein Paartag mit den zwei Attributen sieht so aus `<tag id="einmaliger-name" class="umfassende-klasse"> ... </tag>`\*\*\*\*\*. Das **id** Attribut gibt einem HTML einen einmaligen und eindeutigen Namen\*, das **class** Attribut ordnet das HTML Element einer Klasse von Objekten zu\*.]{fg="yellow-shade-5"}
+:::
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Programmierstil",
+    level = 1,
+    base_points = 7,
+    max_base_points = 7 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Beschreibe mit Deinen eigenen Worten die sechs wichtigsten Programmerstilaspekte bei der HTML Programmierung.
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Folgendes ist zu beachten: 1. Code muss ausführbar sein\*; 2. Tags werden kleingeschrieben\*; 3. Attribute werden kleingeschrieben\* und wenn aus mehreren Wörtern bestehend, dann durch Minuszeichen getrennt\*; 4. Leerzeichen sind nur dann vorhanden, wenn Dokumentteile auch optisch im Code getrennt werden sollen\*; 5. Einrücken bei verschachtelten Tags mit Kindelementen\*; 6. Verwendung von Kommentaren\*. ]{fg="yellow-shade-5"}
+:::

@@ -1,0 +1,96 @@
+## Stufe II
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Unterschied Tag-Element",
+    level = 2,
+    base_points = 8,
+    max_base_points = 8 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Erkläre den Unterschied zwischen einem HTML Element und einem HTML Tag. Gib jeweils drei Beispiele dafür.   
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Ein HTML Element ist das semantische Element, welches ein Teil eines Dokumentes darstellt\*; beispielsweise eine Abbildung, eine Tabelle, oder ein Textabsatz\*\*\*. Ein HTML Tag ist ein Teil des HTML Codes, dass für ein HTML Element steht\*; zum Beispiel **a**\*, **img**\*, **p**\*.]{fg="yellow-shade-5"}
+:::
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Einfachtag und Attribute",
+    level = 2,
+    base_points = 10,
+    max_base_points = 10 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Im folgenden Codelisting; identifiziere welches Tag und welche Attribute verwendet werden. Was macht der Tag? Was bedeuten die Attribute?
+
+```{.html #lst-simpe-tag-anatomy lst-cap='Ein Einfachtag, dass eine Bilddatei zeigt' code-line-numbers="true"} 
+<img
+    src="images/dinosaur.jpg"
+    alt="The head and torso of a dinosaur skeleton;
+            it has a large head with long sharp teeth"
+    width="400"
+    height="341" />
+```
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Der Tag ist `img`\* und es zeigt eine Bilddatei\*. Die Attribute sind `src`\*, zeigt den Pfad zur Datei\*; `alt`\*, zeigt einen Alternativtext, falls die Datei nicht geladen werden kann\*; `width`\* und `height`\*, zeigen die Breite und die Höhe des Bildes in Pixel\*\*. ]{fg="yellow-shade-5"}
+:::
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Zweifachtag Familie",
+    level = 2,
+    base_points = 8,
+    max_base_points = 8 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Im Codelisting 4 der Lerninhalte identifiziere folgendes:
+
+a. Welche Kinderelemente besitzt das Elternelement `table`?
+#. Welche Kinderelemente hat `thead`?
+#. Aus welchen Kinderelementen besteht die erste Zeile im Tabellenkörper? Was sind die Inhalte der Kinderelemente?
+
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[a. Drei Elemente: `caption`, `thead`, `tbody`\*\*\*; b. Ein einziges Kindelement `tr`\*; c. Aus drei `td` Kinderlemente\* mit den Inhalten `Chris`\*, `Disney+`\*, und `15`\*]{fg="yellow-shade-5"}
+:::
