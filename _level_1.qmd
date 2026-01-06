@@ -6,8 +6,8 @@
 task <- tibble::tibble(
     task = "Was ist HTML?",
     level = 1,
-    base_points = 12,
-    max_base_points = 12 
+    base_points = 7,
+    max_base_points = 7 
 ) |>
     dplyr::mutate(
         level_points = base_points * level,
