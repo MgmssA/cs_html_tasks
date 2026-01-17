@@ -127,7 +127,7 @@ tasks <- tasks |> tibble::add_row(task)
 
 ### `{r} task$task`
 
-Beschreibe mit Deinen eigenen Worten die sechs wichtigsten Programmerstilaspekte bei der HTML Programmierung.
+Nenne und beschreibe mit Deinen eigenen Worten die sechs Stilaspekte aus den Lerninhalten, die für uns bei der HTML Programmierung eine Rolle spielen.
 
 [Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
 

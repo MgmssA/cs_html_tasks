@@ -60,7 +60,7 @@ Im folgenden Codelisting; identifiziere welches Tag und welche Attribute verwend
 [Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
-[Der Tag ist `img`\* und es zeigt eine Bilddatei\*. Die Attribute sind `src`\*, zeigt den Pfad zur Datei\*; `alt`\*, zeigt einen Alternativtext, falls die Datei nicht geladen werden kann\*; `width`\* und `height`\*, zeigen die Breite und die Höhe des Bildes in Pixel\*\*. ]{fg="yellow-shade-5"}
+[Der Tag ist `img`\* und es zeigt eine Bilddatei\*. Die Attribute sind `src`\*, zeigt den Pfad zur Datei\*; `alt`\*, zeigt einen Alternativtext, falls die Datei nicht geladen werden kann und für Sehbehinderte Menschen\*; `width`\* und `height`\*, zeigen die Breite und die Höhe des Bildes in Pixel\*\*. ]{fg="yellow-shade-5"}
 :::
 
 ```{r}
